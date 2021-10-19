@@ -19,6 +19,7 @@ public class MyServlet extends HttpServlet {
         req.setAttribute("key","123456");
         req.getRequestDispatcher("test2.jsp").forward(req,resp);
         //resp.sendRedirect("test2.jsp");
+        //test Devp
     }
 
 }
