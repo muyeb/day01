@@ -17,8 +17,8 @@ public class MyServlet extends HttpServlet {
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html;charset = utf-8");
         req.setAttribute("key","123456");
-//        req.getRequestDispatcher("test2.jsp").forward(req,resp);
-        resp.sendRedirect("test2.jsp");
+        req.getRequestDispatcher("test2.jsp").forward(req,resp);
+        //resp.sendRedirect("test2.jsp");
     }
 
 }
